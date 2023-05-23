@@ -1,0 +1,18 @@
+[package]
+name = "tflite"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+flatbuffers = {version="23.1.21", features=["serde"]}
+serde= "1.0.163"
+
+[lib]
+name="tflite_rs"
+path="src/lib.rs"
+
+[[bin]]
+name="tflite"
+path="src/main.rs"

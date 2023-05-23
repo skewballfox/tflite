@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tflitepytest"
+version = "0.1.0"
+description = ""
+authors = ["Joshua Ferguson <joshua.ferguson.273@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+
+tflite = "^2.10.0"
+tensorflow = "^2.12.0"
+
+
+[tool.poetry.group.dev.dependencies]
+bandit = "^1.7.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
